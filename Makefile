@@ -20,5 +20,5 @@ quickstart:
 
 
 clean:
-	rm -rf exampleSite/themes
+	rm -rf xampleSite/themes
 	rm -rf exampleSite/*.epub
