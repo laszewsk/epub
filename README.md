@@ -137,6 +137,26 @@ There are also two shortcodes that generate the cover page and can be customized
 
 [ebook.epub](https://weitblick.org/ebook.epub)
 
+## Quickstart
+
+One way to quickly try this out is to use the following commands. It will create a local copy of the git hub repository and set up the example site as 
+well as generating the ePub.
+
+```bash
+git clone https://github.com/weitblick/epub.git
+cd epub
+cd exampleSite
+mkdir themes
+cd themes
+git clone https://github.com/weitblick/epub.git
+cd epub 
+rm -rf .git
+rm -rf exampleSite   # remove the example site in the theme
+cd ../..
+hugo
+bash ./deploy.sh
+```
+
 ## License
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" class="license-button"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png"></a>
